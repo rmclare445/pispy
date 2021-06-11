@@ -8,7 +8,7 @@ trigger = False
 
 while True:
     
-    if "click" in glob.glob( '/home/ryan/receive/*' ):
+    if "click.txt" in glob.glob( '/home/ryan/*' ):
         
         lt = time.localtime()
 
@@ -18,4 +18,4 @@ while True:
 
         c.take_photo( output )
         
-        c.delete_trigger( '/home/ryan/receive/' )
+        c.delete_trigger( '/home/ryan/click.txt' )
