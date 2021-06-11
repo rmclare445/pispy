@@ -9,7 +9,7 @@ trigger = False
 
 while True:
     
-    if ( ("%sclick.txt" % homedir) in glob.glob( '/home/ryan/*' ) ):
+    if ( ("%sclick" % homedir) in glob.glob( '/home/ryan/*' ) ):
         
         lt = time.localtime()
 
@@ -19,4 +19,4 @@ while True:
 
         c.take_photo( output )
         
-        c.delete_trigger( '%sclick.txt' % homedir )
+        c.delete_trigger( '%sclick' % homedir )
